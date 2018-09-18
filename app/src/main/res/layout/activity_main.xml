@@ -10,19 +10,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unit price" />
-    <EditText android:id="@+id/edit_message"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:id="@+id/unit_price"
+        android:inputType="number"
         android:hint="Enter a number" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number of units" />
-    <EditText android:id="@id/edit_message"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:id="@+id/unit_number"
+        android:inputType="number"
         android:hint="Enter a number" />
     <RadioGroup
         android:layout_width="match_parent"
@@ -30,11 +32,16 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Unit price excl. VAT"/>
+        android:id="@+id/exclusive"
+        android:hint="Unit price excl. VAT"
+        android:layout_marginBottom="10dp"/>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unit price incl. VAT"/>
+        android:id="@+id/inclusive"
+        android:text="Unit price incl. VAT"
+        android:checked="true"
+        android:layout_marginBottom="20dp"/>
     </RadioGroup>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -43,10 +50,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/clear"
             android:text="CLEAR" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/ok"
             android:text="OK"/>
     </LinearLayout>
 

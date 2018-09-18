@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Calculations</string>
+    <string name="enterPrice">Enter a number</string>
+    <string name="enterUnit">Enter a number</string>
+    <string name="exclusiveVAT"></string>
+    <string name="VAT"></string>
+    <string name="inclusiveVAT"></string>
+    <string name="clear">CLEAR</string>
+    <string name="ok">OK</string>
 </resources>

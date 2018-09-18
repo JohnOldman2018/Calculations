@@ -1,87 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="@color/backGround" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unit price" />
+        android:text="Unit price"
+        android:textColorHint="@color/black" />
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/unit_price"
-        android:inputType="number"
-        android:hint="Enter a number" />
+        android:hint="@string/enterPrice"
+        android:textColorHint="@color/textRed"
+        android:background="@color/white"
+        android:inputType="number" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of units" />
+        android:text="Number of units"
+        android:textColorHint="@color/black" />
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/unit_number"
-        android:inputType="number"
-        android:hint="Enter a number" />
+        android:hint="@string/enterUnit"
+        android:textColorHint="@color/textRed"
+        android:background="@color/white"
+        android:inputType="number" />
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/exclusive"
         android:hint="Unit price excl. VAT"
+        android:checked="true"
         android:layout_marginBottom="10dp"/>
     <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/inclusive"
         android:text="Unit price incl. VAT"
-        android:checked="true"
         android:layout_marginBottom="20dp"/>
     </RadioGroup>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/clear"
-            android:text="CLEAR" />
+            android:text="@string/clear"
+            android:background="@drawable/round"
+            android:onClick="onClick"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ok"
-            android:text="OK"/>
+            android:text="@string/ok"
+            android:background="@drawable/round"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/textRed"
+            android:onClick="onClick"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Amount excl. of VAT"/>
+        android:text="Amount excl. of VAT"
+        android:textColorHint="@color/black"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/totalPrice"
+        android:hint="@string/exclusiveVAT"
+        android:background="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="VAT"/>
+        android:text="VAT"
+        android:textColorHint="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=""/>
+        android:id="@+id/VAT"
+        android:hint="@string/VAT"
+        android:background="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Amount incl. of VAT"/>
+        android:text="Amount incl. of VAT"
+        android:textColorHint="@color/black"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=""/>
+        android:id="@+id/totalPriceVAT"
+        android:hint="@string/inclusiveVAT"
+        android:background="@color/white"/>
 
 
 </LinearLayout>

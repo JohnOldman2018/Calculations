@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <stroke android:color="@color/textRed" android:width="2dp"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>
+    <!-- Everything start with item then i decide which shape i want the button to be. Solid is the buttons whole color, stroke will give you different colored edge to the button and width will determine how wide it will be. Corners will determine how curved the edges will be. Test: test out all the different shape etc -->
